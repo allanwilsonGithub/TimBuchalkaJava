@@ -62,8 +62,12 @@ public class BankAccount {
         System.out.println("===============================");
         System.out.println("Current Balance: " + balance);
         System.out.println("Withdrawing: " + withdrawal);
-        balance -= withdrawal;
-        System.out.println("New Balance: " + balance);
+        if (balance-withdrawal >= 0) {
+            balance -= withdrawal;
+            System.out.println("New Balance: " + balance);
+        } else {
+            System.out.println("Not enough funds!");
+        }
     }
 
 
