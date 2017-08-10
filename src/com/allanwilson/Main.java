@@ -8,5 +8,10 @@ public class Main {
         porsche.setModel("Carrera");
 
         System.out.println(porsche.getModel());
+
+        BankAccount allansAccount = new BankAccount();
+        allansAccount.depositFunds(100);
+        allansAccount.withdrawFunds(40);
     }
+
 }
